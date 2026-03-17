@@ -1,13 +1,13 @@
 const products = [
   {
-    id: 1, name: 'Bafang M620 Ultra', cat: 'motor', price: 649, orig: 729, emoji: '⚙️', badge: 'HOT',
-    desc: 'The M620 Ultra is Bafang\'s flagship mid-drive motor. Engineered for aggressive trail riding and high-speed commutes, it delivers unmatched torque response and a refined power curve that makes every climb feel effortless.',
-    specs: [{ l: 'Rated Power', v: '1000W' }, { l: 'Peak Torque', v: '160 Nm' }, { l: 'Voltage', v: '48V' }, { l: 'Weight', v: '4.2 kg' }, { l: 'Efficiency', v: '91%' }, { l: 'IP Rating', v: 'IP65' }],
+    id: 1, name: '415 footlock', cat: 'accessories', price: 25, orig: 30, emoji: '⚙️', badge: 'sale',
+    desc: 'The 415 footlock is our flagship accessory for secure foot placement. that ensures a secure a comfortable wheelie position without the need for clipless shoes. Compatible with most flat pedals and easy to install with included hardware.',
+    specs: [{ l: 'Rated Power  ', v: '1000W' }, { l: 'Peak Torque', v: '160 Nm' }, { l: 'Voltage', v: '48V' }, { l: 'Weight', v: '4.2 kg' }, { l: 'Efficiency', v: '91%' }, { l: 'IP Rating', v: 'IP65' }],
     features: ['Motor unit with integrated gear sensor', 'Torque sensor bottom bracket', 'Speed sensor & magnet', 'Mounting hardware & bolts', 'Wiring harness (600mm)'],
     stock: 'In Stock — Ships within 24h'
   },
   {
-    id: 2, name: 'QS 205 Hub Motor', cat: 'motor', price: 389, orig: null, emoji: '🔩',
+    id: 2, name: 'ultra bee brakes', cat: 'brakes', price: 175, orig: null, emoji: '🔩',
     desc: 'The QS 205 is a high-torque rear hub motor built for high-speed conversion builds. With a wide power band and exceptional thermal tolerance, it handles continuous 3kW+ loads that would destroy lesser motors.',
     specs: [{ l: 'Peak Power', v: '3000W' }, { l: 'Voltage', v: '48–72V' }, { l: 'Max Speed', v: '65 km/h' }, { l: 'Wheel Size', v: '26" / 27.5"' }, { l: 'Axle Width', v: '135mm' }, { l: 'Weight', v: '6.8 kg' }],
     features: ['Hub motor laced to 26" or 27.5" rim', 'Phase wires (350mm pigtail)', 'Hall sensor wires', 'Axle nuts & washers', 'Installation guide'],
