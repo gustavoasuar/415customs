@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>415 CUSTOMS — Ebike Performance Parts</title>
+<title>415 CUSTOMZ — Ebike Performance Parts</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -12,7 +12,7 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#hero"><img src="path56.png" alt="415 Customs" style="height:38px;width:auto;display:block;"></a>
+  <a class="nav-logo" href="#hero"><img src="path56.png" alt="415 Customz" style="height:38px;width:auto;display:block;"></a>
   <ul class="nav-links">
     <li><a href="#offer">Offer</a></li>
     <li><a href="#parts">Parts</a></li>
@@ -46,12 +46,12 @@
   <div class="hero-glow"></div>
   <div class="hero-inner">
     <div class="hero-logo-col">
-      <img src="path56.png" alt="415 Customs Logo">
+      <img src="path56.png" alt="415 Customz Logo">
     </div>
     <div class="hero-text-col">
     <div class="hero-eyebrow">San Francisco — Ebike Performance Division</div>
     <h1 class="hero-title">
-      415<br><span class="hl">CUSTOMS</span>
+      415<br><span class="hl">CUSTOMZ</span>
     </h1>
     <p class="hero-subtitle">High-voltage components engineered for speed, range, and total control. Built for riders who demand more from every watt.</p>
     <div class="hero-cta-row">
@@ -258,7 +258,7 @@
       <h2 class="about-title">
         BORN IN<br>THE <span class="num">415</span>
       </h2>
-      <p class="about-text">415 Customs started in a Mission District garage in 2019. Three riders, one grinder, and a shared obsession with extracting maximum performance from electric drivetrains.</p>
+      <p class="about-text">415 Customz started in a Mission District garage in 2019. Three riders, one grinder, and a shared obsession with extracting maximum performance from electric drivetrains.</p>
       <p class="about-text">Today we source, test, and distribute the world's best ebike performance components — every part validated on real Bay Area terrain before it ships.</p>
       <div class="about-values">
         <div class="value-item">
@@ -461,7 +461,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">415<span>CUSTOMS</span></div>
+    <div class="footer-logo">415<span>CUSTOMZ</span></div>
     <ul class="footer-links">
       <li><a href="#parts">Shop</a></li>
       <li><a href="#about">About</a></li>
@@ -469,7 +469,7 @@
       <li><a href="#">Shipping</a></li>
       <li><a href="#">Returns</a></li>
     </ul>
-    <div class="footer-copy">© 2024 415 Customs — San Francisco, CA</div>
+    <div class="footer-copy">© 2024 415 Customz — San Francisco, CA</div>
   </div>
 </footer>
 
@@ -479,7 +479,7 @@
     <button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-visual">
       <div class="modal-visual-accent"></div>
-      <div class="modal-emoji" id="modal-emoji">⚙️</div>
+      <img class="modal-emoji" id="modal-emoji" src="product_1.webp" alt="Product Image"/>
       <div class="modal-visual-badge" id="modal-visual-badge">Performance Part</div>
     </div>
     <div class="modal-content">
@@ -553,7 +553,22 @@ function openModal(id) {
   const p = products.find(p => p.id === id);
   if (!p) return;
 
-  document.getElementById('modal-emoji').textContent = p.emoji;
+  const emojiEl = document.getElementById('modal-emoji');
+  emojiEl.src = `product_${p.id}.webp`;
+  emojiEl.alt = p.name;
+  emojiEl.onerror = function() {
+    if (this.src.includes('.webp')) {
+      // Try JPG fallback
+      this.src = `product_${p.id}.jpg`;
+    } else {
+      // Both webp and jpg failed, show emoji fallback
+      this.style.display = 'none';
+      const fallback = document.createElement('div');
+      fallback.textContent = p.emoji;
+      fallback.style.cssText = 'font-size:96px; margin-bottom:24px; filter:drop-shadow(0 0 30px rgba(58,142,255,0.2)); animation:modalFloat 4s ease-in-out infinite;';
+      this.parentElement.insertBefore(fallback, this);
+    }
+  };
   document.getElementById('modal-visual-badge').textContent = p.cat.charAt(0).toUpperCase() + p.cat.slice(1) + ' — SKU-' + String(p.id).padStart(4,'0');
   document.getElementById('modal-cat').textContent = p.cat;
   document.getElementById('modal-name').textContent = p.name;
@@ -795,7 +810,7 @@ function renderOfferSection(productId) {
 }
 
 // ── INIT ──
-renderOfferSection(1);
+renderOfferSection(2); // Product ID to feature in the offer section
 renderParts();
 updateCartUI();
 observeFadeUps();

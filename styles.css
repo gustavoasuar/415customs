@@ -1448,7 +1448,11 @@
   }
 
   .modal-emoji {
-    font-size: 96px;
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
     margin-bottom: 24px;
     filter: drop-shadow(0 0 30px rgba(58,142,255,0.2));
     animation: modalFloat 4s ease-in-out infinite;
@@ -1680,7 +1684,7 @@
   @media (max-width: 680px) {
     .modal { grid-template-columns: 1fr; }
     .modal-visual { border-right: none; border-bottom: 1px solid var(--border); min-height: 200px; padding: 40px 24px; }
-    .modal-emoji { font-size: 64px; }
+    .modal-emoji { width: 100%; max-width: 140px; height: 140px; }
     .modal-content { padding: 24px; }
     .modal-name { font-size: 28px; }
   }
