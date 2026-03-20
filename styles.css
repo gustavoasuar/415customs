@@ -1336,6 +1336,15 @@
       width: 100%;
     }
 
+    /* enforce product list stack for narrow screens */
+    .parts-grid { grid-template-columns: 1fr !important; }
+    .product-card { max-width: 100%; width: 100%; }
+    .parts-filters { justify-content: space-between; }
+
+    /* prevent any forced large widths */
+    .modal, .offer-visual, .offer-inner { max-width: 100%; }
+  }
+
     .offer-title { font-size: clamp(40px, 8vw, 64px); }
     .offer-desc { font-size: 15px; }
 
