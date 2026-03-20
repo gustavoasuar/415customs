@@ -479,7 +479,7 @@
     <button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-visual">
       <div class="modal-visual-accent"></div>
-      <img class="modal-emoji" id="modal-emoji" src="product_1.webp" alt="Product Image"/>
+      <img class="modal-emoji" id="modal-emoji" src="/products/product_1.webp" alt="Product Image"/>
       <div class="modal-visual-badge" id="modal-visual-badge">Performance Part</div>
     </div>
     <div class="modal-content">
@@ -525,7 +525,7 @@ function renderParts(filter = 'all') {
     <div class="product-card fade-up" data-cat="${p.cat}" onclick="openModal(${p.id})" style="cursor:pointer;">
       ${p.badge ? `<div class="product-badge">${p.badge}</div>` : ''}
       <div class="product-img">
-        <img src="product_${p.id}.webp" alt="${p.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <img src="/products/product_${p.id}.webp" alt="${p.name}" style="width:100%; height:100%; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
         <span style="display:none; font-size: 14px; color: var(--muted);">No Image</span>
       </div>
       <div class="product-category">${p.cat}</div>
@@ -554,7 +554,7 @@ function openModal(id) {
   if (!p) return;
 
   const emojiEl = document.getElementById('modal-emoji');
-  emojiEl.src = `product_${p.id}.webp`;
+  emojiEl.src = `/products/product_${p.id}.webp`;
   emojiEl.alt = p.name;
   emojiEl.onerror = function() {
     if (this.src.includes('.webp')) {
