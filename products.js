@@ -91,14 +91,14 @@ const products = [
     stock: 'In Stock — Ships within 48h'
   },
   {
-    id: 14, name: 'Wiring Harness Kit', cat: 'accessories', price: 34, orig: null, emoji: '🔌',
-    desc: 'A complete professional-grade wiring kit with waterproof connectors rated to 40A continuous. Everything you need to run a clean, reliable ebike build from battery to motor. No crimping required — all pre-terminated.',
-    specs: [{ l: 'Rating', v: '40A / 60V max' }, { l: 'Wire Gauge', v: '12 AWG (main)' }, { l: 'Connectors', v: 'XT60 / MR30 / SM' }, { l: 'Waterproof', v: 'IP67 connectors' }, { l: 'Length', v: '800mm main' }, { l: 'Pieces', v: '24-piece set' }],
+    id: 14, name: '3D motocutz plate', cat: 'accessories', price: 34, orig: null, emoji: '🔌',
+    desc: 'The 3D Motocutz plate is designed to provide robust protection for your ebike’s drivetrain components while enhancing the overall aesthetics of your build. Crafted from high-quality, impact-resistant materials with a sleek 3D design, this plate offers a secure fit and easy access for maintenance, ensuring your motor and chainring stay safe from the elements and road debris.',
+    specs: [],
     features: ['XT60 battery connector pair', 'Phase wire set (3×12AWG)', 'Hall sensor connectors', 'Display cable extensions', 'Heat shrink assortment', 'Cable ties (20 pack)'],
     stock: 'In Stock — Ships within 24h'
   },
   {
-    id: 15, name: 'Thumb Throttle', cat: 'accessories', price: 22, orig: 28, emoji: '🖐️', badge: 'NEW',
+    id: 15, name: '', cat: 'accessories', price: 22, orig: 28, emoji: '🖐️', badge: 'NEW',
     desc: 'Our in-house designed aluminum thumb throttle features a smooth hall-effect sensor for lag-free throttle response. The ergonomic profile sits naturally under your thumb for all-day comfort without fatigue.',
     specs: [{ l: 'Type', v: 'Thumb / Hall' }, { l: 'Voltage', v: '3.3–5V' }, { l: 'Output', v: '0.8–4.2V analog' }, { l: 'Material', v: 'CNC 6061 alloy' }, { l: 'Bar Clamp', v: '22.2mm' }, { l: 'Cable', v: '600mm, 3-pin JST' }],
     features: ['Thumb throttle unit', 'Lock-on bar clamp', '3-pin JST cable', 'Spare hall sensor', '1-year warranty card'],
