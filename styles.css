@@ -531,7 +531,7 @@
     bottom: 24px;
     right: 24px;
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     font-family: var(--font-display);
     font-size: 32px;
     padding: 8px 16px;
@@ -675,7 +675,7 @@
 
   .add-btn:hover {
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     border-color: var(--accent);
   }
 
@@ -792,7 +792,7 @@
     transition: background 0.2s;
   }
 
-  .qty-btn:hover { background: var(--accent); color: var(--bg); }
+  .qty-btn:hover { background: var(--accent); color: #fff; }
 
   .qty-num {
     font-family: var(--font-mono);
@@ -905,12 +905,12 @@
     white-space: nowrap;
   }
 
-  .promo-btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .promo-btn:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
   .checkout-btn {
     width: 100%;
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 3px;
@@ -1016,7 +1016,7 @@
   .place-order-btn {
     width: 100%;
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 3px;
@@ -1220,7 +1220,7 @@
 
   .submit-btn {
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 3px;
@@ -1294,7 +1294,7 @@
     bottom: 32px;
     right: 32px;
     background: var(--accent);
-    color: var(--bg);
+    color: #fff;
     font-family: var(--font-mono);
     font-size: 12px;
     letter-spacing: 2px;
@@ -1462,7 +1462,7 @@
     line-height: 1;
   }
 
-  .modal-close:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .modal-close:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
   .modal-visual {
     background: var(--surface);
